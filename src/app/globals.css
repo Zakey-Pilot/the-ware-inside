@@ -18,9 +18,88 @@
     --foreground: #ededed;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/* Body */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #fefae0, #f5ebe0);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 30px;
+  background-color: #588157;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero {
+  position: absolute;
+  padding: 30rem 20px;
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.hero h2 {
+  font-size: 4rem;
+  margin-bottom: 50px;
+  color: #344e41;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Email Form */
+.email-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.email-form button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #588157;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #3a5a40;
 }
